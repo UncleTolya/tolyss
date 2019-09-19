@@ -1,0 +1,68 @@
+
+#c5e0ff
+#c6c5ff
+c5feff 
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(192, 187, 233);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 30px;
+}
+
+.text-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to left bottom, #c5e0ff31, #c5feff) , url(../img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 70%)
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;  
+} 
+
+.logo {
+    height: 35px;
+}
+
+.heading-primary {
+    color: fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block; 
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 35px
+}
+
+.heading-primary-sub {
+    display: block; 
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 36.8px;
+}
