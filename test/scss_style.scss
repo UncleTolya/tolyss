@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+$color-primary: #c5feff;
+$color-secondary: #c6c5ff;
+$color-tertiary: #c5f0ff;
+
+$color-text-dark: #333;
+$color-text-light: #eee;
+
+$width-button: 150px;
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin style-link-text($color: $color-text-dark) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+  @include clearfix;
+}
+
+.buttons {
+  float: right;
+}
+
+%btn-placeholder {
+  padding: 10px;
+  text-align: center;
+  border-radius: 100px;
+  display: inline-block;
+  @include style-link-text($color-text-light);
+  width: $width-button;
+}
+
+.btn-main {
+  &:link {
+    @extend %btn-placeholder;
+    background-color: darken($color-secondary, 10%);
+  }
+  &:visited {
+    color: $color-primary;
+  }
+  &:hover {
+    background-color: lighten($color-secondary, 20%);
+    color: orange;
+  }
+}
+
+.btn-hot {
+  &:link {
+    @extend %btn-placeholder;
+    background-color: darken($color-secondary, 30%);
+  }
+  &:visited {
+    color: $color-primary;
+  }
+  &:hover {
+    background-color: lighten($color-secondary, 20%);
+    color: orange;
+  }
+}
+
+.navigation {
+  list-style: none;
+  float: left;
+  li {
+    display: inline-block;
+    margin-left: 30px;
+
+    &:first-child {
+      margin: 0;
+    }
+    a:link  {
+      @include style-link-text($color-text-dark)
+    }
+  }
+}

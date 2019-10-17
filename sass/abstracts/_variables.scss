@@ -1,0 +1,22 @@
+// COLORS
+$color1: #c5e0ff;
+$color2: #c5feff;
+$color3: #c0bbe9;
+
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #777;
+
+$color-grey-light-1: #c1c1c120;
+$color-background-1: $color2;
+
+#gradient-vertical {
+  --color-stop-1: #00c3ff;
+  --color-stop-2: #77e190;
+  --color-stop-3: #ffff1c;
+}
+
+//GRID
+$grid-width: 114rem;
+$gutter-vertical: 4rem;
+$gutter-horizontal: 6rem;

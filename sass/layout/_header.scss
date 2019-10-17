@@ -1,0 +1,31 @@
+@import "../abstracts/variables";
+
+.header {
+  height: 90vh;
+  background-image: url(../img/1.jpg), linear-gradient(to right top, darken($color2, 70%), lighten($color3, 40%));
+  background-size: cover;
+  background-blend-mode: exclusion;
+  background-position: center;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 70%);
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  &__start-button-box {
+    left: 69%;
+    top: 70%;
+    position: absolute;
+  }
+}

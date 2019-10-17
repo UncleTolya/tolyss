@@ -1,0 +1,19 @@
+@import "../abstracts/variables";
+
+main {
+  width: 100%;
+}
+
+.section-about {
+  background-color: $color-grey-light-1;
+  padding-bottom: 34.5rem;
+  margin-top: -27vh;
+}
+
+.photo {
+  height: 80%;
+  margin-top: 5.5rem;
+  background-size: cover;
+  background-image: url(../img/222.jpg);
+  clip-path: polygon(0 0, 100% 24%, 100% 76%, 0 100%);
+}

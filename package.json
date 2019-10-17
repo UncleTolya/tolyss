@@ -1,0 +1,25 @@
+{
+  "name": "tolyss",
+  "version": "1.0.0",
+  "description": "private blog",
+  "main": "index.js",
+  "dependencies": {
+    "node": "^12.12.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UncleTolya/tolyss.git"
+  },
+  "author": "myhlv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UncleTolya/tolyss/issues"
+  },
+  "homepage": "https://github.com/UncleTolya/tolyss#readme"
+}

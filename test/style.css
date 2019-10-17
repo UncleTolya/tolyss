@@ -1,0 +1,184 @@
+*,
+*:after,
+*:before {
+  padding: 10px;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #c0bbe9;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: end;
+}
+
+.header {
+  height: 95vh;
+  background-image: url(../img/1.jpg), linear-gradient(to left bottom, #c5e0ff, #c5feff);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 70%);
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 3.5rem;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 13rem;
+}
+
+.heading-primary--main {
+  display: block;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  letter-spacing: 3.68rem;
+  animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes flickerAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes longIncrease {
+  0% {
+    font-size: inherit;
+    color: #c5feff;
+  }
+  100% {
+    font-size: 8.2rem;
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.header__compliment {
+  position: absolute;
+  top: 58rem;
+  right: 13rem;
+}
+
+.header__compliment:hover {
+  color: chartreuse;
+  animation: longIncrease 5s forwards ease-out;
+  transition: 3s;
+}
+
+.header__compliment-main {
+  text-transform: uppercase;
+  animation: flickerAnimation 1ms infinite;
+}
+
+.header__logo:hover {
+  animation: flickerAnimation 1ms infinite;
+}
+
+.header__start-button--main:link,
+.header__start-button--main:visited {
+  margin-top: 4rem;
+  text-decoration: none;
+  padding: 0.5rem 4rem;
+  display: inline-block;
+  transition: 0.2s;
+  position: relative;
+  font-size: 2rem;
+  background-color: #ffffff;
+  color: #777777;
+  text-transform: uppercase;
+}
+
+.header__start-button--main:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.header__start-button--main:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: 0.1s;
+}
+
+.header__start-button--main:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.2s;
+  background-color: #fff;
+}
+
+.header__start-button--main:hover:after {
+  transform: scale3d(3, 4, 0);
+  opacity: 0;
+}
+
+/*# sourceMappingURL=main.css.map*/
