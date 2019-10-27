@@ -67,7 +67,7 @@ body {
   background-image: linear-gradient(to right, #b47877, #4e8a89);
   -webkit-background-clip: text;
   color: transparent;
-  padding-top: 40rem;
+  padding: 6rem 0;
   letter-spacing: .4rem;
   transition: all .1s;
 
@@ -76,6 +76,10 @@ body {
     text-shadow: .5rem .8rem .8rem rgba($color-black, .2);
 
   }
+}
+
+.paragraph {
+  font-size: 1.5rem;
 }
 
 .heading-tertiary {

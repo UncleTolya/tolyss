@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 
 .composition {
-  margin-top: 18rem;
+  margin-top: 11rem;
   position: relative;
 
   &__photo {
@@ -14,22 +14,33 @@
     &--p1 {
       left: 0;
       top: 0;
+      //transform: rotate(20deg);
+      &:hover {
+        transform: rotate(-20deg);
+      }
     }
 
     &--p2 {
       right: 0;
       top: 7rem;
+      transform: rotate(-10deg);
+      &:hover {
+        transform: rotate(10deg);
+      }
     }
 
     &--p3 {
       left: 10rem;
       top: 17rem;
+      transform: rotate(16deg);
+      &:hover {
+        transform: scale(1.1) rotate(3deg);
+      }
     }
 
     &:hover {
       outline: 0.3rem #b47877 solid;
       outline-offset: 3rem;
-      transform: scale(1.1) translateY(-1rem);
       box-shadow: 0 4rem 8rem rgba($color-black, .7);
       z-index: 20;
     }

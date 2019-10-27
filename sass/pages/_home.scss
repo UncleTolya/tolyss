@@ -7,13 +7,56 @@ main {
 .section-about {
   background-color: $color-grey-light-1;
   padding-bottom: 34.5rem;
+  padding-top: 14.5rem;
   margin-top: -27vh;
 }
 
-.photo {
-  height: 80%;
-  margin-top: 5.5rem;
+.section-features {
+  padding: 20rem 0;
+  background-image: url(../img/5.jpg), linear-gradient(to right top, darken($color2, 20%), darken($color2, 50%), lighten($color3, 10%));
+  background-blend-mode: difference;
   background-size: cover;
-  background-image: url(../img/222.jpg);
-  clip-path: polygon(0 0, 100% 24%, 100% 76%, 0 100%);
+  transform: skewY(15deg);
+  margin-top: -16rem;
+
+  & > * {
+    transform: skewY(-15deg);
+  }
+}
+
+.section-projects {
+  background-color: $color-grey-light-1;
+  margin-top: -21rem;
+  padding: 30rem 0 12rem;
+}
+
+.section-stories {
+  position: relative;
+  padding: 4rem 0 0;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, $color1, $color3);
+}
+
+.book {
+  background-image:
+          linear-gradient(
+                 105deg,
+                  rgba($color-white, .9) 50%,
+                  transparent 0%
+          ),
+          url(../img/666.jpg);
+  background-size: cover;
+  background-blend-mode: lighten;
+  border-radius: 3px;
+  height: 50rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+  &__form {
+    width: 50%;
+    padding: 1rem 2rem;
+
+  }
 }
